@@ -62,8 +62,7 @@ data_clean["Age"] = (
 
 # Format years in company
 data_clean["Years_in_company"] = (
-    todaysDate - pd.to_datetime(data_clean["Year_of_recruitment"], format="%Y")
-) / np.timedelta64(1, "Y")
+    todaysDate - pd.to_datetime(data_clean["Year_of_recruitment"], format="%Y")) / np.timedelta64(1, "Y")
 
 # convert No_of_previous_employers to int
 data_clean["No_of_previous_employers"] = data_clean["No_of_previous_employers"].astype(

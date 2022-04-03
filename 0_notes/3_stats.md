@@ -126,3 +126,4 @@ AKA analysis of effect size
     * Large effect size:  d = 0.8
 * uplift: the increase in conversion for a given x (i.e. day)
 * 
+

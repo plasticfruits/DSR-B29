@@ -109,7 +109,14 @@ Scaling a feature makes a huge difference in performance.
 * ways to avoid converging to a local in (instead of global):
     - adam: use the momentum to try to overshoot convergence point
     - start multiple random seeds
-    
+* Steps:
+    1. take derivative (i.e. gradient) of loss function for each parameter in it
+    2. pick random values for the parameters
+    3. plug the params into derivatives (i.e. gradient)
+    4. calculate step size `step = slope * learning rate`
+    5. calculate new params `new_param = old_pram - step size`
+    6. go back to 3 and repeat until steps are small enough OR you reach max number of steps
+* Stochastic Gradient Descent: uses randomly selected subset of data at every step for faster performance (saves time for calculating derivatives of loss function)
 
 ## Decision Trees
 Decision trees split everything "purely" which leads to over-fitting --> "thats why we use random forests"

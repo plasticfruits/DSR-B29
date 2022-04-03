@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/13_DS_Fundamental" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/13_Pipelines" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/14_mini_competition/dsr-rossman-comp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/20_debugging" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/6_Data_Vizz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/7_stats_time_series" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/9_docker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plotly_files" vcs="Git" />
+  </component>
+</project>

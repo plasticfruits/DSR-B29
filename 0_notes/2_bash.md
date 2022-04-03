@@ -121,6 +121,7 @@
     * `cat countries_capitals.tsv|grep Ireland > only_ireland.tsv` filter all elements that contain "Ireland" and save it to a new file
 * `cat file.tsv|sort` - print content sorted
     `|uniq` - shows unique elements
+* `cat .txt | head -n 1 | jq` show structure of json file
 
 
 ## Envs and Vars

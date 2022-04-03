@@ -168,6 +168,10 @@ fig = go.Figure(data=[trace0, trace1], layout=layout)
 
 <br>  
 
+## Pandas Profiling
+* `from pandas_profiling import ProfileReport`
+* `profile = ProfileReport(data, title="Pandas Profiling Report", explorative=True)`
+
 ## **Hosting**  
 * GitHub pages recommended for hosting images
     * upload as `index.html` to display directly, in repo go to settings/pages/ set to main and save.

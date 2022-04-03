@@ -1,5 +1,7 @@
 # **Key Python Notes**
 
+- `dir()` to get info on functions 
+
 - **Useful Libs**:
     - isort: shorts libraries imported
     - 
@@ -9,7 +11,14 @@
     - R to Pandas 2: https://gist.github.com/conormm/fd8b1980c28dd21cfaf6975c86c74d07  
     - undersampling & over-sampling to reduce bias in datasets (e.g. recipes...)
 
+- **Requirements.txt**
+Export requirements.txt file:
+    - `pip list --format=freeze > requirements.txt`
 <br>
+
+# Timing tools
+* `%timeit` add it to line to print time: 
+    - Exmaple: `%timeit cross_val_score(reg, X, y, cv=3)`
 
 # **response**
 * `response = requests.get(url, stream=True)`
@@ -49,7 +58,24 @@
 
 # **Pandas**  
 
+### Load Data
+* import form multiple JSON files:
+    ```
+    import glob
 
+    dfList = []
+    for file in sorted(glob.glob("./data/return-data/*")):
+        one_day_df = pd.read_json(file, lines=True)
+        dfList.append(one_day_df)
+    df = pd.concat(dfList).reset_index(drop=True)
+    ```
+
+### **NA's**
+
+* `store_clean['StoreType'].value_counts()`
+* `store_clean[store_clean['Store'].isna()]`
+* `.fillna('missing')`
+* `print(df.isnull().sum())`print number of nas by col
 ### **Filtering**
 * `data.drop(columns="Survived")` drop column 
     - drop by defualt wants to drop rows
@@ -60,6 +86,8 @@
     bool_in_list = data.loc[:, col_name].isin(list_of_vals)
     data.loc[bool_in_list, :]
     ```
+* `rossman_df[~((rossman_df.Sales<1)&(rossman_df.Open==1))]`
+
 
 
 ### **Env adjustments**

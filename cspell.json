@@ -3,7 +3,21 @@
     "ignorePaths": [],
     "dictionaryDefinitions": [],
     "dictionaries": [],
-    "words": [],
+    "words": [
+        "architechture",
+        "crossentropy",
+        "dont",
+        "evrything",
+        "GENSIM",
+        "hyperparameters",
+        "Keras",
+        "lemmatizing",
+        "lstm",
+        "LSTM",
+        "overfitting",
+        "relu",
+        "softmax"
+    ],
     "ignoreWords": [],
     "import": []
 }
